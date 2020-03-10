@@ -54,6 +54,8 @@
            ((IR_SEND_PWM_PIN>=59) && (IR_SEND_PWM_PIN<=61) ) || (IR_SEND_PWM_PIN== 69)))
      #error "Unsupported output pin Adafruit Grand Central Metro M4"
   #endif
+#elif defined (SEEED_WIO_TERMINAL)
+  #define IR_SEND_PWM_PIN WIO_IR
 #else //Other generic SAMD 51 boards 
   //Default is 9.
   #define IR_SEND_PWM_PIN 9
