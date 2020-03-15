@@ -45,11 +45,9 @@ script:
     - |
       buildExampleSketch dumpFreq;
     - |
-      buildExampleSketch Freq;
+      buildExampleSketch freq;
     - |
-      buildExampleSketch hashDecde;
-    - |
-      buildExampleSketch Iot_IR;
+      buildExampleSketch hashDecode;
     - |
       buildExampleSketch pattern;
     - |
@@ -60,8 +58,6 @@ script:
       buildExampleSketch send;
     - |
       buildExampleSketch serialRemote;
-    - |
-      buildExampleSketch servo;
 notifications:
   webhooks:
     urls:
