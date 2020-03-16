@@ -6,7 +6,7 @@ matrix:
     - env:
         - BOARD="Seeeduino:samd:seeed_XIAO_m0"
     - env:
-        - BOARD="Seeeduino:samd:seeed_grove_ui_wireless"
+        - BOARD="Seeeduino:samd:seeed_wio_terminal"
 
 # default phases
 before_install:
@@ -26,6 +26,9 @@ before_install:
       cd "${HOME}/Arduino/libraries/${repositoryName}"
       cd "${TRAVIS_BUILD_DIR}"
     }
+  - installLibrary arduino-libraries/Servo
+  - installLibrary arduino-libraries/Mouse
+  - installLibrary arduino-libraries/Keyboard
   - installLibrary Seeed-Studio/Seeed_Arduino_IR
   - buildExampleSketch() { arduino-cli compile  --warnings all --fqbn $BOARD $PWD/examples/$1 --verbose; }
   - buildExampleUtilitySketch() { arduino-cli compile --warnings all --fqbn $BOARD $PWD/examples/utility/$1 --verbose; }
