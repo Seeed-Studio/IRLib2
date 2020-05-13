@@ -13,7 +13,7 @@ before_install:
 script:
    - chmod +x seeed-arduino-ci.sh
    - cat $PWD/seeed-arduino-ci.sh
-   - bash $PWD/seeed-arduino-ci.sh test
+   - bash $PWD/seeed-arduino-ci.sh  Iot_IR:seeed_XIAO_m0/Iot_IR:uno/servo:seeed_XIAO_m0/servo:uno/rawSend:seeed_XIAO_m0/rawSend:uno/serialRemote:seeed_XIAO_m0/serialRemote:uno arduino-libraries/Servo arduino-libraries/Mouse arduino-libraries/Keyboard
 
 notifications:
   email:

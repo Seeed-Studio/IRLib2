@@ -1,4 +1,4 @@
-﻿# Seeed_Arduino_IR [![Build Status](https://travis-ci.com/Seeed-Studio/IRLib2.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_IR)
+﻿# Seeed_Arduino_IR [![Build Status](https://travis-ci.com/Seeed-Studio/IRLib2.svg?branch=master)](https://travis-ci.com/Seeed-Studio/IRLib2)
 Seeed_Arduino_IR forked from [RLib2](https://github.com/cyborg5/IRLib2). It is a Library for Receiving, Decoding and Sending Infrared Signals Using Arduino. 
 
 IRLib2 is copyright 2017 by Chris Young. It it is a major rewrite of the original IRLib 1.x by Chris Young which in turn was based on IRremote by Ken Shirriff. See COPYRIGHT.txt for details.
